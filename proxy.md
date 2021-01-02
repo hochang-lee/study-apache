@@ -11,8 +11,9 @@
 
 
     2. forward proxy의 필요성
- <div>
-<img width='400' height='400' src="https://user-images.githubusercontent.com/63176389/103449693-590f4600-4cef-11eb-8ce1-3d5adac3ef05.png">
+
+<div>
+    <img width='400' height='300' src="https://user-images.githubusercontent.com/63176389/103449693-590f4600-4cef-11eb-8ce1-3d5adac3ef05.png">
 </div>
 
     		일반적으로 프록시라함은 포워드 프록시를 가리킨다
@@ -26,7 +27,9 @@
 
     3. reverse proxy의 필요성
 
-
+<div>
+    <img width='400' height='300' src="https://user-images.githubusercontent.com/63176389/103449713-a8ee0d00-4cef-11eb-92df-5e52dd3a61b3.png">
+</div>
 
     	클라이언트는 리버스 프록시로 요청을 보낸다. 그러면 다른 서버에 있는 문서를 가져와서 클라이언트에게 전달할 수 있도록 해준다
 
