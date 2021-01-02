@@ -1,4 +1,6 @@
-  1. mod_cache 의 필요성
+  
+
+	1. mod_cache 의 필요성
 		컴퓨터의 내용 또는 프록시된 내용을 캐시할 수 있도록 한다.
 		
 	2. 저장 관리 모듈
@@ -25,17 +27,17 @@
 		httpd.conf
 		
           LoadModule cache_module modules/mod_cache.so
-    <IfModule mod_cache.c>
-        LoadModule cache_disk_module modules/mod_cache_disk.so
-        <IfModule mod_cache_disk.c>
-            CacheRoot "c:/cacheroot"
-            CacheEnable disk  "/"
-            CacheDirLevels 5
-            CacheDirLength 3
-        </IfModule>
-          # When acting as a proxy, don't cache the list of security updates
-        CacheDisable "http://security.update.server/update-list/"
-    </IfModule>
+	    <IfModule mod_cache.c>
+		LoadModule cache_disk_module modules/mod_cache_disk.so
+		<IfModule mod_cache_disk.c>
+		    CacheRoot "c:/cacheroot"
+		    CacheEnable disk  "/"
+		    CacheDirLevels 5
+		    CacheDirLength 3
+		</IfModule>
+		  # When acting as a proxy, don't cache the list of security updates
+		CacheDisable "http://security.update.server/update-list/"
+	    </IfModule>
 			
 		
 
